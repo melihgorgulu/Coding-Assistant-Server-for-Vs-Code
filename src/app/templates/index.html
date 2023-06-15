@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarCoder Code Assistant</title>
+    <style>
+            body {
+      font-family: Arial, sans-serif;
+      background-color: #0e0429;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .all-page {
+        padding: 20px;
+    }
+
+    .input-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .input-text {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      height:40%;
+      width:100%;
+    }
+
+    .input-button {
+      padding: 10px 20px;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      background-color: #e6330b;
+      font-weight : bold ;
+      width:50%;
+    }
+
+    .output-container {
+      padding: 20px;
+      background-color: #0c0329;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .io-text {
+        font-family: 'Share Tech', sans-serif;
+        font-size: 16px;
+        color: white;
+        margin-top: -40px;
+    }
+    .io-text-header{
+        font-family: Arial, sans-serif;
+        font-size: 32px;
+        color: white;
+        margin-top: -40px;
+        font-weight: bold;
+    }
+
+
+    </style>
+</head>
+<body>
+
+<div class="all-page">
+<h1 style="color:#e0daf0;">Welcome to StarCoder Code Assistant!</h1>
+<div class="input-container">
+<form action="/predict" method="post">
+    <input type="text" name="text" id="input-text" class="input-text" placeholder="Send a message." />
+    <button id="send-button" class="input-button" type="submit">Send</button>
+</form>
+</div>
+</div>
+
+</body>
+</html>
+
+
